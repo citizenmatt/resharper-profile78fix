@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>profile78fix</id>
+    <title>Profile78 Tactical Fix</title>
+    <version>1.0.0</version>
+    <authors>Matt Ellis</authors>
+    <owners>Matt Ellis</owners>
+    <description>Tactical fix to stop ReSharper complaining that System.Runtime needs to be referenced when working with projects referencing a Profile78 PCL assembly</description>
+    <projectUrl>https://github.com/citizenmatt/resharper-profile78fix</projectUrl>
+    <licenseUrl>https://raw.github.com/citizenmatt/resharper-profile78fix/master/license.txt</licenseUrl>
+    <iconUrl>https://raw.github.com/citizenmatt/resharper-profile78fix/master/icon.png</iconUrl>
+    <copyright>Copyright 2014 Matt Ellis</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <!-- 8.1.23 is 8.1 RTM -->
+      <dependency id="ReSharper" version="[8.1,8.1.24)" />
+    </dependencies>
+    <tags>resharper pcl profile78</tags>
+  </metadata>
+  <files>
+    <file src="..\src\resharper-profile78fix\bin\Release\CitizenMatt.ReSharper.Profile78.dll"
+          target="ReSharper\v8.1\plugins" />
+  </files>
+</package>
